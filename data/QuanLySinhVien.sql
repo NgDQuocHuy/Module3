@@ -28,7 +28,7 @@ CREATE TABLE `class` (
   `StarDate` datetime NOT NULL,
   `Statuss` bit(1) DEFAULT NULL,
   PRIMARY KEY (`ClassID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,6 +37,7 @@ CREATE TABLE `class` (
 
 LOCK TABLES `class` WRITE;
 /*!40000 ALTER TABLE `class` DISABLE KEYS */;
+INSERT INTO `class` VALUES (1,'A1','2008-12-20 00:00:00',_binary ''),(2,'A2','2008-12-22 00:00:00',_binary ''),(3,'B3','2022-08-24 00:00:00',_binary '\0');
 /*!40000 ALTER TABLE `class` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -59,7 +60,7 @@ CREATE TABLE `mark` (
   CONSTRAINT `mark_ibfk_1` FOREIGN KEY (`SubID`) REFERENCES `subjectt` (`SubID`),
   CONSTRAINT `mark_ibfk_2` FOREIGN KEY (`StudentID`) REFERENCES `student` (`StudentID`),
   CONSTRAINT `mark_chk_1` CHECK ((`Mark` between 0 and 100))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,6 +69,7 @@ CREATE TABLE `mark` (
 
 LOCK TABLES `mark` WRITE;
 /*!40000 ALTER TABLE `mark` DISABLE KEYS */;
+INSERT INTO `mark` VALUES (1,1,1,8,1),(2,1,2,10,2),(3,2,1,12,1);
 /*!40000 ALTER TABLE `mark` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -86,7 +88,7 @@ CREATE TABLE `student` (
   `Statuss` bit(1) DEFAULT NULL,
   `ClassID` int NOT NULL,
   PRIMARY KEY (`StudentID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -95,6 +97,7 @@ CREATE TABLE `student` (
 
 LOCK TABLES `student` WRITE;
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
+INSERT INTO `student` VALUES (1,'Hùng','Hà Nội','0912113113',_binary '',1),(2,'Hoa','Hải Phòng',NULL,_binary '',1),(3,'Mạnh','HCM','0123123123',_binary '\0',2);
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -112,7 +115,7 @@ CREATE TABLE `subjectt` (
   `Statuss` bit(1) DEFAULT b'1',
   PRIMARY KEY (`SubID`),
   CONSTRAINT `subjectt_chk_1` CHECK ((`Credit` >= 1))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -121,6 +124,7 @@ CREATE TABLE `subjectt` (
 
 LOCK TABLES `subjectt` WRITE;
 /*!40000 ALTER TABLE `subjectt` DISABLE KEYS */;
+INSERT INTO `subjectt` VALUES (1,'CF',5,_binary ''),(2,'C',6,_binary ''),(3,'HDJ',5,_binary ''),(4,'RDBMS',10,_binary '');
 /*!40000 ALTER TABLE `subjectt` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -133,4 +137,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-23 16:18:24
+-- Dump completed on 2022-08-24  8:33:47
