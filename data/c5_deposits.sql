@@ -11,6 +11,10 @@ BEGIN
 		SET sMessage = 'Vui lòng nhập ID người nhận';
         SET flag = FALSE;
         END IF;
+	IF (NOT EXISTS (SELECT id FROM customers WHERE id = sRecipient_id)) THEN
+		SET sMessage = 'Id khách hàng không tồn tại';
+        SET flag = FALSE;
+        END IF;
 	IF (sBalance <= 0) THEN
 		SET sMessage = 'Số tiền nạp phải lớn hơn 0';
         SET flag = FALSE;
