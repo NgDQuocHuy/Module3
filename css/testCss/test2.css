@@ -1,0 +1,49 @@
+p.id1 {
+    width: 25%;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    
+    margin: 50px 100px;
+    border: 5px solid red;
+}
+p.id2 {
+    background-color: antiquewhite;
+    width: 50%;
+    height: 100px;
+    overflow: scroll;
+}
+table.huy {
+    padding: 50px;
+    border-top:5px solid red;
+    border-right:5px solid blue;
+    border-bottom:5px solid yellow;
+    border-left:5px solid black;
+    border-radius:20px 0;
+}
+
+.top {
+    width: 50%;
+    height: 100px;
+    background-color: brown;
+}
+
+.left {
+    width: 10%;
+    height: 100px;
+    background-color: chartreuse;
+    /* float: left; */
+}
+
+.center {
+    width: 25%;
+    height: 100px;
+    background-color: orange;
+    float: left;
+}
+
+.right {
+    width: 25%;
+    height: 150px;
+    background-color: aqua;
+}

@@ -1,0 +1,158 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+/* SCC HEADER */
+
+header > h1 {
+    text-align: center;
+    color: gray;
+    font-size: 50px;
+    text-shadow: 3px 4px lightgray;
+    animation: doimau 1s infinite;
+}
+
+header > hr {
+    width: 10%;
+    height: 2%;
+}
+
+@keyframes doimau {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: green;
+    }
+}
+
+
+
+/* CSS BODY */
+section.phones {
+    display: flex;
+}
+
+div.phone {
+    width: 25%;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1%;
+}
+
+div.phone > img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+
+div.phone > img:hover {
+    transform: scale(1.2);
+}
+
+/* CSS NAV */
+nav {
+    background-color: #DD0000;
+}
+
+nav  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav  ul > li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav  ul > li > a:hover {
+    background-color: #FF5050;
+    color: black;
+    text-decoration: underline;
+}
+
+nav ul > li > ul > li > a:hover {
+    background-color: red;
+    color: black;
+    text-decoration: underline;
+}
+
+/* CSS FOOTER */
+
+footer {
+    background-color: #F0F0F0;
+    color: black;
+    padding: 5px;
+}
+
+footer > hr {
+    width: 3%;
+}
+
+footer h1, p {
+    text-align: center;
+}
+
+.col25 {
+    width: 25%;
+}
+
+.col50 {
+    width: 50%;
+}
+
+div.contact {
+    display: flex;
+}
+
+footer ul {
+    list-style: none;
+}
+
+table.infor {
+    width: 100%;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 10px;
+}
+
+textarea {
+    width: 95.4%;
+    padding: 10px;
+    height: 50px;
+}
+
+input[type=submit] {
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    border: 1px solid orange;
+}
+
+table.infor tr:last-child {
+    text-align: center;
+}
+
+/* CSS SUB MENU */
+
+.subcontent {
+    display: none;
+    position: absolute;
+    background-color: #FF5050;
+    width: 250px;
+}
+
+.submenu:hover .subcontent {
+    display: block;
+}
