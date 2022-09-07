@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.containe {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+.div {
+    background-color: #242526;
+    overflow: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.div1 {
+    width: 25%;
+    float: left;
+}
+
+.div1 ul {
+    display: flex;
+}
+
+.div1 > ul li {
+    padding: 5px;
+    font-size: 40px;
+}
+
+.div1 input {
+    height: 30px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: lightgrey;
+    color: grey;
+}
+
+.div2 {
+    width: 50%;
+    float: left;
+}
+
+.div2 ul {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.div2 > ul li {
+    margin: 0;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.div2 > ul li i:hover {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 8px 32px;
+    color: gray;
+    transform: scale(1.1);
+}
+
+.div2 > ul li i {
+    color: lightgrey;
+    padding: 8px 32px;
+}
+
+.div3 {
+    width: 25%;
+    float: right;
+}
+
+.div3 ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.div3 > ul > li button {
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 100%;
+    border: none;
+    background-color: lightgrey;
+}
+
+.div3 > ul > li button i {
+    color: grey;
+}
+
+.div3 > ul > li button:hover {
+    transform: scale(1.1);
+    background-color: whitesmoke;
+}
+
+.div3 > ul > li {
+    padding: 10px;
+}
+
+.status {
+    width: 20%;
+    height: 100%;
+    background-color: #18191A;
+    overflow: auto;
+    position: fixed;
+    top: 66px;
+}
+
+.infor {
+    margin: 20px 10px;
+}
+
+.infor > ul > li {
+    padding: 10px;
+}
+
+.infor img {
+    width: 30px;
+    border-radius: 100px;
+}
+
+.infor > ul > li a {
+    font-size: 20px;
+    width: 100%;
+    display: inline-block;
+    color: whitesmoke;
+}
+
+.infor > ul > li:hover {
+    background-color: #303031;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.group {
+    margin: 20px 10px;
+    color: whitesmoke;
+}
+
+.group > ul > li {
+    padding: 10px;
+}
+
+.group > ul > li a {
+    font-size: 20px;
+    width: 100%;
+    display: inline-block;
+    color: whitesmoke;
+}
+
+.group > ul > li:hover {
+    background-color: #303031;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.message {
+    width: 20%;
+    background-color: aquamarine;
+    position: fixed;
+    right: 0px;
+    top: 66px;
+    background-color: #18191A;
+    height: 100%;
+    color: whitesmoke;
+    overflow: auto;
+    padding: 20px 10px;
+}
+
+.message > ul > li {
+    padding: 10px;
+}
+
+.message > ul > li a {
+    font-size: 20px;
+    width: 100%;
+    display: inline-block;
+    color: whitesmoke;
+}
+
+.message > ul > li:hover {
+    background-color: #303031;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.newfeed  {
+    width: 60%;
+    background-color: #18191A;
+    margin: auto;
+    padding-top: 80px;
+    text-align: center;
+}
+
+
+
+.item p {
+    float: left;
+    margin-left:100px ;
+    font-size: 30px;
+}
+
+.item img {
+    border-radius: 10px;
+    clear: left;
+    margin: 10px;
+}
+
