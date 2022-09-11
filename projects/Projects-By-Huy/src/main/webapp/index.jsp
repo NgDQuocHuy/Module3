@@ -18,11 +18,13 @@
     }
 </style>
 <body>
-    <form class="login" method="get" action="/login">
-        <h2>Login</h2>
-        <input type="text" name="username" size="30" placeholder="Username"/>
-        <input type="password" name="password" size="30" placeholder="Password"/>
-        <input type="submit" value="Sign in"/>
-    </form>
+    <h1>Chào Mừng Bạn Đến Với Projects By Huy</h1>
+    <ul>
+        <li>Tổng Quan Về Web</li>
+            <ul>
+                <li>Login Simple (/login)</li>
+                <li>Currency Converter (/convert)</li>
+            </ul>
+    </ul>
 </body>
 </html>
