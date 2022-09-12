@@ -22,10 +22,10 @@ public class DiscountCalculator extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String title = req.getParameter("product");
-        double price = Double.parseDouble(req.getParameter("price"));
-        double discount = Double.parseDouble(req.getParameter("discount"));
-        double discountAmount = price * discount * 0.01;
-        double discountPrice = price - discountAmount;
+        float price = Float.parseFloat(req.getParameter("price"));
+        float discount = Float.parseFloat(req.getParameter("discount"));
+        float discountAmount = (float) (price * discount * 0.01);
+        float discountPrice = price - discountAmount;
 
         PrintWriter out = resp.getWriter();
 
